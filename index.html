@@ -50,8 +50,14 @@
             <li>In case of tie, the winner will be decided on the basis of shortest code.</li>
             <li>Kindly submit your response with your registered email id.</li>
             <li>Participants has to submit their code in zip format.</li>
-
         </ul>
+    </div>
+    <div class="button" style="display:flex;margin: 3% 0 0 1%;">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">I have all the rules and regulations and follows all during this event.</label>
+    </div>
+    <div class="register" style="margin:3% 0 0 1% ;">
+        <button disabled id="button">Register</button>
     </div>
     <div class="coordinator">
         <h1>Student Coordinator</h1>
@@ -65,8 +71,19 @@
 </body>
 <footer>
     <div class="reserved" style="color:red ; text-align:center;margin:10% 0 5% 0;">
-        <h1>All Rights Reserved 2022.</h1>
+        <h1>All Rights Reserved 2022. CXI-MIET</h1>
     </div>
 </footer>
+<script>
+    let a=document.getElementById('checkbox')
+    a.addEventListener("click",()=>{
+        if(document.getElementById("checkbox").checked == true){
+            document.getElementById('button').disabled=false
+        }
+        else{
+            document.getElementById('button').disabled=true
+        }
+    })
+</script>
 
 </html>
