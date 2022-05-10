@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello</title>
+    <link rel="stylesheet" href="css/style.css ">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
-    <div class="heading">
-        <h1>CSS battleground</h1>
+    <div class="back center">
+        <img src="images/logo.png" alt="">
     </div>
-    <div class="content">
-        <p>CSS BattleGround is an online CSS code golfing game
+    <div class="present center col" id="present">
+        <img src="images/logo.png" alt="">
+        <h2>Presenting...</h2>
+    </div>
+    <div class="heading center "  id="heading">
+        <h1 class="center"><p data-aos="slide-right" data-aos-delay="2800"  >CSS</p> &nbsp;<span data-aos="slide-left" data-aos-delay="2800" >battleground</span> </h1>
+    </div>    
+    <img src="images/ilus-1.png" id="tRight" class="t-right" alt="">
+    <section class="center col" >
+        <div class="content section fade-up" id="section">
+        <p>CSS BattleGround is an online CSS code golfing game...
         </p>
         <p>CSS BattleGround is one of its kind game for frontend developers.<br>
             The objective of the game is to write CSS to replicate the given target image in the least code possible in
             the given time allotted.</p>
     </div>
-    <div class="price">
-        <h3>Price</h3>
+    <div class="price section fade-up" id="section">
+        <h3 class="shead">Price</h3>
+        <p>There were 3 position </p>
         <ul>
-            <li>There were 3 position </li>
-            <li>I<sup>st</sup> position got ₹1500 cash price</li>
-            <li>II<sup>nd</sup> position got ₹1000 cash price</li>
-            <li>III<sup>rd</sup> position got ₹500 cash price</li>
-            <li>100% Certification</li>
+            <li>🥇 I<sup>st</sup> position got ₹1500 cash price</li>
+            <li>🥈 II<sup>nd</sup> position got ₹1000 cash price</li>
+            <li>🥉 III<sup>rd</sup> position got ₹500 cash price</li>
+            <li>🎫 100% Certification</li>
         </ul>
     </div>
-    <div class="description">
-        <h3>Description</h3>
+    <div class="description section fade-up" id="section">
+        <h3 class="shead">Description</h3>
         <ul>
             <li>In this contest we will give you a specific time to complete a task.</li>
             <li>The Task is to make a picture same as given in the file(provided you on that day only). </li>
             <li>After the submission we will give you points according to the accuracy of the picture you made.</li>
         </ul>
     </div>
-    <div class="rules">
-        <h3>Rules and regulation</h3>
+    <div class="rules section fade-up" id="section">
+        <h3 class="shead">Rules and regulation</h3>
         <ul>
             <li>You can use HTML, CSS, SASS(if you know).</li>
             <li>Use of any framework is prohibited.</li>
@@ -57,33 +67,26 @@
         <label for="checkbox">I have all the rules and regulations and follows all during this event.</label>
     </div>
     <div class="register" style="margin:3% 0 0 1% ;">
-        <button disabled id="button">Register</button>
+        <button disabled id="button" onclick="navigate()">Register</button>
     </div>
-    <div class="coordinator">
+    <!-- <div class="coordinator">
         <h1>Student Coordinator</h1>
         <div class="name" style="display: flex; justify-content: space-around;">
             <p>Abhishek Singhal </p>
             <p>Abhinav Yadav </p>
             <p>Nishita Sharma </p>
             <p>Dhruv </p>
-        </div>
+        </div> -->
     </div>
+    </section>
+    <!-- js aos -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:1000
+  
+        });
+    </script>
 </body>
-<footer>
-    <div class="reserved" style="color:red ; text-align:center;margin:10% 0 5% 0;">
-        <h1>All Rights Reserved 2022. CXI-MIET</h1>
-    </div>
-</footer>
-<script>
-    let a=document.getElementById('checkbox')
-    a.addEventListener("click",()=>{
-        if(document.getElementById("checkbox").checked == true){
-            document.getElementById('button').disabled=false
-        }
-        else{
-            document.getElementById('button').disabled=true
-        }
-    })
-</script>
-
 </html>
