@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>CSS BattleGround</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/style.css ">
+    <link rel="stylesheet" href="css/res.css ">
+
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -20,7 +23,7 @@
     <div class="heading center "  id="heading">
         <h1 class="center"><p data-aos="slide-right" data-aos-delay="2800"  >CSS</p> &nbsp;<span data-aos="slide-left" data-aos-delay="2800" >battleground</span> </h1>
     </div>    
-    <img src="images/ilus-1.png" id="tRight" class="t-right" alt="">
+    <img src="images/tright.png" id="tRight" class="t-right" alt="">
     <section class="center col" >
         <div class="content section fade-up" id="section">
         <p>CSS BattleGround is an online CSS code golfing game...
@@ -59,24 +62,16 @@
             <li>Single response will be considered.</li>
             <li>In case of tie, the winner will be decided on the basis of shortest code.</li>
             <li>Kindly submit your response with your registered email id.</li>
-            <li>Participants has to submit their code in zip format.</li>
         </ul>
     </div>
-    <div class="button" style="display:flex;margin: 3% 0 0 1%;">
+    <div class="button section " >
         <input type="checkbox" name="checkbox" id="checkbox">
-        <label for="checkbox">I have all the rules and regulations and follows all during this event.</label>
+        <label for="checkbox" class="checkbox">I have read all the <span>rules</span> and <span>regulations</span> and follows all during this event.</label>
     </div>
-    <div class="register" style="margin:3% 0 0 1% ;">
-        <button disabled id="button" onclick="navigate()">Register</button>
-    </div>
-    <!-- <div class="coordinator">
-        <h1>Student Coordinator</h1>
-        <div class="name" style="display: flex; justify-content: space-around;">
-            <p>Abhishek Singhal </p>
-            <p>Abhinav Yadav </p>
-            <p>Nishita Sharma </p>
-            <p>Dhruv </p>
-        </div> -->
+        <main class="center col">
+            <button disabled id="button" class="Button fade" onclick="navigate()">Register </button>
+            <p class="hide">Please tick Checkbox</p>
+        </main>
     </div>
     </section>
     <!-- js aos -->
