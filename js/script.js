@@ -64,5 +64,5 @@ let a=document.getElementById('checkbox')
 
     // to navigate
     function navigate(){
-        window.location=("paplu.com")
+        window.location=("https://forms.gle/etef8epL3EhdoZxa7")
     }
