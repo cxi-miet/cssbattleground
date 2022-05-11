@@ -56,4 +56,13 @@
   .t-right{
       display: none;
   }
+  .bottom{
+      flex-direction: column !important;
+  }
+  .member .mem {
+      width: 25rem;
+  }
+  .MEM{
+      flex-direction: column;
+  }
 }

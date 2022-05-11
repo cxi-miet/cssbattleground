@@ -265,31 +265,59 @@ button{
 }
 /* button hover*/
  .hide {
-  display: none;
+  transform: scale(0);
+  transition: .2 all ease;
 }
 
 button:hover + .hide {
     margin-top: .3rem;
-  display: block;
+  transform: scale(1);
   color: red;
 }
+
+
 /* bottom */
 footer{
     position: relative;
     width: 100%;
-    min-height: 40vh;
+    min-height: 10vh;
     background-color: rgb(34, 33, 33);
+    margin-top: 2rem;
 }
 .bottom{
-    position: absolute;
-    bottom: 0;
+    width: 100vw;
     z-index: 99;
-    width: 100%;
-    max-height: 10vh;
     margin-bottom: 1rem;
     justify-content: space-around;
     color: red;
 }
+.bottom p{
+    padding-top: 1rem;
+}
 .bottom a{
     color: red;
+}
+/* time */
+.time{
+  position: fixed;
+  border-radius: 10px;
+  top: 20px;
+  right: 20px;
+  height: 60px;
+  background-color: black;
+  width: 200px;
+  border: 1px solid black;
+  z-index: 9;
+}
+.tim{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.tim p{
+  padding-left: 4px;
+  color: red;
 }

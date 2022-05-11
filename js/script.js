@@ -17,7 +17,7 @@ const i2 = setInterval(()=>{
     i2off()
 },5200)
 function i2off(){
-    clearInterval(i1);
+    clearInterval(i2);
 }
 
 
@@ -26,16 +26,20 @@ const i3 = setInterval(()=>{
     i3off()
 },6000)
 function i3off(){
-    clearInterval(i1);
+    clearInterval(i3);
 }
 // animation
 
 let sec = document.querySelectorAll("#section")
 
 window.addEventListener('scroll',toshow);
-setInterval(()=>{
+const i4=setInterval(()=>{
     toshow();
-},2000)
+    i4off()
+},6000)
+function i4off(){
+    clearInterval(i4);
+}
 function toshow() {
     let bottom = window.innerHeight/6*5;
     sec.forEach((show) => {
@@ -55,10 +59,12 @@ let a=document.getElementById('checkbox')
         if(document.getElementById("checkbox").checked == true){;
             document.getElementById('button').disabled=false
             document.getElementById('button').classList.remove("fade")
+            document.getElementById('hide').classList.add("none")
         }
         else{
             document.getElementById('button').disabled=true
             document.getElementById('button').classList.add("fade")
+            document.getElementById('hide').classList.remove("none")
         }
     })
 
@@ -66,3 +72,24 @@ let a=document.getElementById('checkbox')
     function navigate(){
         window.location=("https://forms.gle/etef8epL3EhdoZxa7")
     }
+
+    // timer
+
+    let interval = setInterval(() => {
+      const till = new Date(2022, 4, 14).getTime();
+      const now = till - new Date().getTime();
+      const days = Math.floor(now / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((now % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minute = Math.floor((now % (1000 * 60 * 60)) / (1000 * 60));
+      const second = Math.floor(now % (1000 * 60) / 1000);
+      // console.log(days, hours, minute, second);
+      if (now < 0) clearInterval(interval.current);
+      else{
+          document.getElementById("day").innerText=`  ${days}`
+          document.getElementById("hrs").innerText=`:  ${hours}`
+          document.getElementById("min").innerText=`:  ${minute}`
+          document.getElementById("sec").innerText=`:  ${second}`
+          
+      }
+    }, 1000);
+    

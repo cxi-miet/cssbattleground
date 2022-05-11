@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS BattleGround</title>
     <link rel="icon" href="images/logo1.png">
-    <link rel="stylesheet" href="css/style.css ">
     <link rel="stylesheet" href="css/res.css ">
+    <link rel="stylesheet" href="css/member.css ">
+    <link rel="stylesheet" href="css/style.css ">
 
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -70,16 +71,76 @@
     </div>
         <main class="center col">
             <button disabled id="button" class="Button fade" onclick="navigate()">Register </button>
-            <p class="hide">Please tick Checkbox</p>
+            <p class="hide" id="hide">Please tick Checkbox</p>
         </main>
     </div>
     </section>
-    <footer>
+    <!-- members=================================== -->
+    <div class="member center col">
+        <div class="shead">
+            STUDENT COORDINATORS
+        </div>
+        <div class="MEM center ">
+            <div class="mem fade-up" id="section">
+                <div class="over center col">
+                    <h3>Abhishek Singhal</h3>
+                    <p>B.Tech CSIT 2<sup>nd</sup> year <br>Mob. 9927245142</p>
+                </div>
+                <img src="images/members/mem1.jpeg" alt="">
+            </div>
+            <div class="mem">
+                <div class="over center col">
+                    <h3>Abhinav Yadav</h3>
+                    <p>B.Tech CSE 2<sup>nd</sup> year <br>Mob. 8791292122</p>
+                </div>
+                <img src="images/members/mem1.jpeg" alt="">
+            </div>
+        </div>
+        <div class="MEM center " style="justify-content: space-evenly !important;">
+            <div class="mem">
+                <div class="over center col">
+                    <h3>Nishita Sharma</h3>
+                    <p>B.Tech CSE 2<sup>nd</sup> year <br></p>
+                </div>
+                <img src="images/members/mem3.jpeg" alt="">
+            </div>
+            <div class="mem">
+                <div class="over center col">
+                    <h3>Dhruv</h3>
+                    <p>B.Tech CSE 1<sup>st</sup> year <br></p>
+                </div>
+                <img src="images/members/mem4.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- footer=================================== -->
+    <footer class="center">
         <div class="bottom center">
             <p>© 2022 <a href="https://cxi-miet.github.io/">CXI</a> ,Meerut Institute Of Engineering and Technology, Meerut, 250005.</p>
             <p>Designed by <a href="https://github.com/Abhimrt">Abhishek Singhal</a></p>
         </div>
     </footer>
+    <!-- time--------------------------->
+    <div class="time center">
+        <div class="tim">
+            <div id="day"></div>
+            <p>Days</p>
+        </div>
+
+        <div class="tim">
+            <div id="hrs"></div>
+            <p>hour</p>
+        </div>
+        
+        <div class="tim">
+            <div id="min"></div>
+            <p>Min</p>
+        </div>
+        <div class="tim">
+            <div id="sec"></div>
+            <p>Sec</p>
+        </div>
+    </div>
     <!-- js aos -->
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
