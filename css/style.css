@@ -312,12 +312,13 @@ footer{
   transform: scale(0.95);
   transform: translateY(85vh);
   transition: .6s all cubic-bezier(.86,0,.07,1);
+  transition: .3s width cubic-bezier(.86,0,.07,1);
 }
 .up{
   transform: translateY(0);
 }
 .time:hover{
-  transform: scale(1);
+  width: 220px;
 }
 .tim{
   width: 50px;
