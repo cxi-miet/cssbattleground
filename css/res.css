@@ -65,4 +65,8 @@
   .MEM{
       flex-direction: column;
   }
+  .date{
+ width: 80% !important;
+}
+
 }

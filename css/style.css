@@ -321,3 +321,13 @@ footer{
   padding-left: 4px;
   color: red;
 }
+/* date */
+.date{
+ width: 60%;
+  margin: auto;
+  border-radius: 40px;
+}
+.date img{
+  width: 100%;
+  border-radius: 40px;
+}
