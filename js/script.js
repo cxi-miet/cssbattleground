@@ -49,7 +49,7 @@ function i4off(){
     clearInterval(i4);
 }
 function toshow() {
-    let bottom = window.innerHeight/6*5;
+    let bottom = window.innerHeight/6*4.4;
     sec.forEach((show) => {
         const boxtop = show.getBoundingClientRect().top;
         if(boxtop < bottom){

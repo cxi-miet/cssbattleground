@@ -137,8 +137,8 @@ section{
 
 /* animation of fade in */
 .fade-up{
-    transition: 1s all cubic-bezier(.26,-0.64,.17,1);
-    transition: 1.6s opacity ease;
+    transition: 1.5s all cubic-bezier(.26,-0.64,.17,1);
+    transition: 1.8s opacity ease;
     transform: translateY(100px);
     opacity: 0;
 }

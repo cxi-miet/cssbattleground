@@ -3,6 +3,7 @@
   width: 90vw;
   min-height: 50vh;
   margin: auto;
+  overflow: hidden;
 }
 
 .MEM {
