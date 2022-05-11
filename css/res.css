@@ -38,11 +38,11 @@
         font-size: 2.5rem !important;
     }
   section{
-      width: 100%;
-      margin: 0rem !important;
+      width: 100vw !important;
+      margin: auto !important;
   }
   .section{
-      width: 90%;
+      width: 100%;
 
   }
   .t-right{

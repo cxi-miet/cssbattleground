@@ -33,6 +33,14 @@ function i3off(){
 let sec = document.querySelectorAll("#section")
 
 window.addEventListener('scroll',toshow);
+window.addEventListener('scroll',()=>{
+    const htop = document.getElementById("heading").getBoundingClientRect().bottom;
+    if(htop<0){
+        document.getElementById("time").classList.add("up")
+    }else{
+        document.getElementById("time").classList.remove("up")
+    }
+});
 const i4=setInterval(()=>{
     toshow();
     i4off()

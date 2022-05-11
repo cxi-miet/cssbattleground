@@ -308,6 +308,16 @@ footer{
   width: 200px;
   border: 1px solid black;
   z-index: 9;
+  box-shadow: 5px 5px 20px black;
+  transform: scale(0.95);
+  transform: translateY(85vh);
+  transition: .6s all cubic-bezier(.86,0,.07,1);
+}
+.up{
+  transform: translateY(0);
+}
+.time:hover{
+  transform: scale(1);
 }
 .tim{
   width: 50px;
@@ -316,6 +326,7 @@ footer{
   align-items: center;
   flex-direction: column;
   color: white;
+  
 }
 .tim p{
   padding-left: 4px;
