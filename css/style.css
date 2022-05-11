@@ -311,8 +311,8 @@ footer{
   box-shadow: 5px 5px 20px black;
   transform: scale(0.95);
   transform: translateY(85vh);
-  transition: .6s all cubic-bezier(.86,0,.07,1);
   transition: .3s width cubic-bezier(.86,0,.07,1);
+  transition: .6s all cubic-bezier(.86,0,.07,1);
 }
 .up{
   transform: translateY(0);
