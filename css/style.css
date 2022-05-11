@@ -71,7 +71,8 @@ body{
     }
 }
 /* subtitle */
-.shead{
+.shead, 
+.sec h2{
     font-size: 3rem;
     text-transform: uppercase;
     font-family: 'Gloria Hallelujah', cursive;
@@ -125,7 +126,10 @@ section{
 .section ul{
     margin-left: 1rem;
 }
-.section p, .section li, .checkbox{
+.section p, 
+.section li, 
+.checkbox, 
+.date p{
     padding-bottom: 1rem;
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -352,4 +356,7 @@ footer{
 }
 .date img:hover{
   transform: scale(1);
+}
+.date h2{
+  font-size: 1.5rem;
 }
