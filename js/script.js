@@ -84,7 +84,7 @@ let a=document.getElementById('checkbox')
     // timer
 
     let interval = setInterval(() => {
-      const till = new Date(2022, 4, 14).getTime();
+      const till = new Date(2022, 4, 13, 21).getTime();
       const now = till - new Date().getTime();
       const days = Math.floor(now / (1000 * 60 * 60 * 24));
       const hours = Math.floor((now % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
