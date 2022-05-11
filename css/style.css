@@ -10,6 +10,8 @@
 }
 body{
     background: var(--col1);
+    scroll-behavior: smooth;
+
 }
 
 .center{
