@@ -2,6 +2,9 @@ let heading = document.querySelector("#heading")
 let present = document.querySelector("#present")
 let tRight = document.querySelector("#tRight")
 
+
+alert("Registration over")
+
 const i1 = setInterval(()=>{
     present.classList.add("none")
     window.scrollTo(0, 0);
@@ -32,6 +35,7 @@ function i3off(){
 
 let sec = document.querySelectorAll("#section")
 
+// animation for timer to go up
 window.addEventListener('scroll',toshow);
 window.addEventListener('scroll',()=>{
     const htop = document.getElementById("heading").getBoundingClientRect().bottom;
@@ -41,6 +45,7 @@ window.addEventListener('scroll',()=>{
         document.getElementById("time").classList.remove("up")
     }
 });
+
 const i4=setInterval(()=>{
     toshow();
     i4off()
@@ -78,13 +83,14 @@ let a=document.getElementById('checkbox')
 
     // to navigate
     function navigate(){
-        window.location=("https://forms.gle/etef8epL3EhdoZxa7")
+        window.location=("gameon.html")
+
     }
 
     // timer
 
     let interval = setInterval(() => {
-      const till = new Date(2022, 4, 13, 21).getTime();
+      const till = new Date(2022, 4, 13, 22).getTime();
       const now = till - new Date().getTime();
       const days = Math.floor(now / (1000 * 60 * 60 * 24));
       const hours = Math.floor((now % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -100,4 +106,3 @@ let a=document.getElementById('checkbox')
           
       }
     }, 1000);
-    

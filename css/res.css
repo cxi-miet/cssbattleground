@@ -70,3 +70,24 @@
 }
 
 }
+@media (max-width: 400px) {
+    .heading {
+        font-size: 1rem !important;
+    }
+  .t-right{
+      display: none;
+  }
+  .bottom{
+      flex-direction: column !important;
+  }
+  .member .mem {
+      width: 25rem;
+  }
+  .MEM{
+      flex-direction: column;
+  }
+  .date{
+ width: 90% !important;
+}
+
+}
