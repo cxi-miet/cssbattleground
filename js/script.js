@@ -3,7 +3,7 @@ let present = document.querySelector("#present")
 let tRight = document.querySelector("#tRight")
 
 
-alert("Registration over")
+
 
 const i1 = setInterval(()=>{
     present.classList.add("none")
@@ -26,6 +26,7 @@ function i2off(){
 
 const i3 = setInterval(()=>{
     tRight.classList.add("tRightShow")
+    alert("Registration over")
     i3off()
 },6000)
 function i3off(){
