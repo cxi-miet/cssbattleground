@@ -97,7 +97,12 @@ let a=document.getElementById('checkbox')
       const minute = Math.floor((now % (1000 * 60 * 60)) / (1000 * 60));
       const second = Math.floor(now % (1000 * 60) / 1000);
       // console.log(days, hours, minute, second);
-      if (now < 0) clearInterval(interval.current);
+      if (now < 0) {
+          document.getElementById("day").innerText=`  00`
+          document.getElementById("hrs").innerText=`:  00`
+          document.getElementById("min").innerText=`:  00`
+          document.getElementById("sec").innerText=`:  00`
+      }
       else{
           document.getElementById("day").innerText=`  ${days}`
           document.getElementById("hrs").innerText=`:  ${hours}`
