@@ -26,7 +26,6 @@ function i2off(){
 
 const i3 = setInterval(()=>{
     tRight.classList.add("tRightShow")
-    alert("Registration over")
     i3off()
 },6000)
 function i3off(){
