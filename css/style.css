@@ -364,3 +364,7 @@ footer{
 .date h2{
   font-size: 1.5rem;
 }
+/* previous */
+.previous{
+  margin-bottom: 10rem;
+}
