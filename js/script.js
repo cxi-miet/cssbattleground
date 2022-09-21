@@ -1,6 +1,6 @@
-// let heading = document.querySelector("#heading")
-// let present = document.querySelector("#present")
-// let tRight = document.querySelector("#tRight")
+let heading = document.querySelector("#heading")
+let present = document.querySelector("#present")
+let tRight = document.querySelector("#tRight")
 
 
 
