@@ -92,7 +92,7 @@ let a=document.getElementById('checkbox')
     // timer
 
     let interval = setInterval(() => {
-      const till = new Date(2022, 9, 02, 11).getTime();
+      const till = new Date(2022, 9, 01, 22).getTime();
       const now = till - new Date().getTime();
       const days = Math.floor(now / (1000 * 60 * 60 * 24));
       const hours = Math.floor((now % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -100,10 +100,10 @@ let a=document.getElementById('checkbox')
       const second = Math.floor(now % (1000 * 60) / 1000);
       // console.log(days, hours, minute, second);
       if (now < 0) {
-          document.getElementById("day").innerText=`  00`
-          document.getElementById("hrs").innerText=`:  00`
-          document.getElementById("min").innerText=`:  00`
-          document.getElementById("sec").innerText=`:  00`
+          document.getElementById("day").innerText=`  Time`
+          document.getElementById("hrs").innerText=`  over`
+          document.getElementById("min").innerText=`..`
+          document.getElementById("sec").innerText=`..`
       }
       else{
           document.getElementById("day").innerText=`  ${days}`
