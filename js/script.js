@@ -83,7 +83,7 @@ let a=document.getElementById('checkbox')
 
     // to navigate
     function navigate(){
-        window.location=("https://forms.gle/ths9P2gXcDV2EUhL8")
+        window.location=("gameon2.0.html")
     }
     function navigateShow(){
         window.location=("gameon.html")
