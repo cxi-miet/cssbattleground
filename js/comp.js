@@ -35,7 +35,7 @@ let time1 = "oct 2, 2022 11:00:00"
 let time2 = "oct 2, 2022 11:5:00"
 let time3 = "oct 2, 2022 11:10:00"
 let time4 = "oct 2, 2022 11:15:00"
-let time5 = "oct 2, 2022 13:00:00"
+let time5 = "oct 2, 2022 13:10:00"
 
 
 let interval = setInterval(() => {
