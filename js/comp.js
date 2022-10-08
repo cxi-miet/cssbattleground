@@ -31,11 +31,11 @@ function run4() {
 
 
 // timer = = = = = = = = = = = = = = =
-let time1 = "oct 2, 2022 11:00:00"
-let time2 = "oct 2, 2022 11:5:00"
-let time3 = "oct 2, 2022 11:10:00"
-let time4 = "oct 2, 2022 11:15:00"
-let time5 = "oct 2, 2022 13:10:00"
+let time1 = "oct 8, 2022 10:30:00"
+let time2 = "oct 8, 2022 10:35:00"
+let time3 = "oct 8, 2022 10:40:00"
+// let time4 = "oct 8, 2022 12:30:00"
+let time5 = "oct 8, 2022 12:30:00"
 
 
 let interval = setInterval(() => {
@@ -98,7 +98,7 @@ function Second() {
         const second = Math.floor(now % (1000 * 60) / 1000);
         if (now < 0) {
             document.getElementById("type3").classList.remove("none")
-            third()
+            forth()
             clr1()
         }
         else {
@@ -113,34 +113,34 @@ function Second() {
     }
 }
 
-function third() {
-    let interval2 = setInterval(() => {
-        const till = new Date(time4).getTime();
-        const now = till - new Date().getTime();
-        const days = Math.floor(now / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((now % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minute = Math.floor((now % (1000 * 60 * 60)) / (1000 * 60));
-        const second = Math.floor(now % (1000 * 60) / 1000);
-        if (now < 0) {
-            document.getElementById("type4").classList.remove("none")
-            forth()
-            clr2()
+// function third() {
+//     let interval2 = setInterval(() => {
+//         const till = new Date(time4).getTime();
+//         const now = till - new Date().getTime();
+//         const days = Math.floor(now / (1000 * 60 * 60 * 24));
+//         const hours = Math.floor((now % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//         const minute = Math.floor((now % (1000 * 60 * 60)) / (1000 * 60));
+//         const second = Math.floor(now % (1000 * 60) / 1000);
+//         if (now < 0) {
+//             document.getElementById("type4").classList.remove("none")
+//             forth()
+//             clr2()
 
-            document.getElementById("hrs").innerText = `  00`
-            document.getElementById("min").innerText = `:  00`
-            document.getElementById("sec").innerText = `:  00`
-        }
-        else {
-            document.getElementById("time_info").innerHTML = `&#160;&#160;&#160; Next image in:`
-            document.getElementById("hrs").innerText = `  ${hours}`
-            document.getElementById("min").innerText = `:  ${minute}`
-            document.getElementById("sec").innerText = `:  ${second}`
-        }
-    }, 1000);
-    function clr2() {
-        clearInterval(interval2);
-    }
-}
+//             document.getElementById("hrs").innerText = `  00`
+//             document.getElementById("min").innerText = `:  00`
+//             document.getElementById("sec").innerText = `:  00`
+//         }
+//         else {
+//             document.getElementById("time_info").innerHTML = `&#160;&#160;&#160; Next image in:`
+//             document.getElementById("hrs").innerText = `  ${hours}`
+//             document.getElementById("min").innerText = `:  ${minute}`
+//             document.getElementById("sec").innerText = `:  ${second}`
+//         }
+//     }, 1000);
+//     function clr2() {
+//         clearInterval(interval2);
+//     }
+// }
 function forth() {
     let interval2 = setInterval(() => {
         const till = new Date(time5).getTime();
